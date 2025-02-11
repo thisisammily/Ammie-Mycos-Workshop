@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Card</title>
+    <title>Ammie web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Outfit', sans-serif;
         }
 
         body {
@@ -22,7 +24,8 @@
 
         .card {
             background: white;
-            width: 300px;
+            width: 320px;
+            height: 499px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -39,18 +42,26 @@
         }
 
         .content h3 {
-            font-size: 18px;
-            font-weight: bold;
-            color: #1f3251;
+            align-self: stretch;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            color: #1f314f;
+            word-wrap: break-word;           
         }
 
         .content p {
-            font-size: 14px;
-            color: #7b879d;
-            margin-top: 10px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 21px;
+            color: #68778d;
+            word-wrap: break-word;
+            padding: 16px;
         }
     </style>
 </head>
+
 <body>
 
     <div class="card">
@@ -59,9 +70,10 @@
         </div>
         <div class="content">
             <h3>Improve your front-end skills by building projects</h3>
-            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level!</p>
+            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
         </div>
     </div>
 
 </body>
+
 </html>
