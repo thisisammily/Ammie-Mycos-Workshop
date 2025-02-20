@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi-Lo Dice Game</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Start Screen -->
+    <div id="start-screen">
+      <h1>Welcome to Hi-Lo Dice!</h1>
+      <input type="text" id="player-name" placeholder="Enter your name" />
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="hidden">
+      <h1>Welcome, <span id="display-name"></span>!</h1>
+      <h2>Balance: ฿ <span id="balance">1000.00</span></h2>
+
+      <div class="input-group">
+        <label for="bet">Your Bet:</label>
+        <input type="number" id="bet" min="1" placeholder="Enter your bet" />
+      </div>
+
+      <div class="radio-group">
+        <label
+          ><input type="radio" name="choice" value="high" /> High (≥12)</label
+        >
+        <label
+          ><input type="radio" name="choice" value="mid" /> Mid (=11, 5x)</label
+        >
+        <label
+          ><input type="radio" name="choice" value="low" /> Low (≤10)</label
+        >
+      </div>
+
+      <button id="roll-btn">Roll Dice!</button>
+
+      <div id="dice-results">
+        <div class="dice" id="dice1">🎲 ?</div>
+        <div class="dice" id="dice2">🎲 ?</div>
+        <div class="dice" id="dice3">🎲 ?</div>
+        <div class="dice">=</div>
+        <div class="dice" id="diceTotal">0</div>
+      </div>
+
+      <h3 id="error-message" class="warning-text"></h3>
+      <h3 id="result-message"></h3>
+
+      <button id="exit-btn" class="warning-color">Exit</button>
+    </div>
+
+    <!-- Try Again Screen -->
+    <div id="try-again-screen" class="hidden">
+      <h1>YOU LOSE!</h1>
+      <button id="retry-btn">Try Again</button>
+    </div>
+
+    <script src="/js/hilo-game.js"></script>
+  </body>
+</html>

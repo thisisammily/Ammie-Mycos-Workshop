@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --black: #333;
+  --font-size-l: 24px;
+  --font-size-m: 20px;
+  --font-family: "Poppins", sans-serif;
+  --text-dark: #003366;
+  --text-light: #e8ecf3;
+  --primary-color: #fffbcc;
+  --primary-color-selected: #ffee99;
+  --secondary-color: #117fa0;
+  --warning-color: #c70e20;
+}
+
+body {
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--white);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.primary-color {
+  background-color: var(--primary-color);
+  color: var(--text-dark);
+}
+
+.secondary-color {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+}
+
+.warning-color {
+  background-color: var(--warning-color);
+  color: var(--text-light);
+}
+
+.warning-text {
+  color: var(--warning-color);
+}
+
+/* Start Screen */
+#start-screen {
+  height: 100vh;
+  background: url("/images/bg1.png") no-repeat center center fixed;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-size: 24px; /* Bigger label text */
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-size: 22px; /* Bigger input text */
+  padding: 12px;
+  width: 80%; /* Wider input box */
+  max-width: 400px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  margin: 15px 0; /* Add margin (15px top & bottom, 0 left & right) */
+}
+
+input[type="radio"] {
+  transform: scale(1.5); /* Make radio buttons bigger */
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #fffbcc;
+}
+
+button {
+  background: #fffbcc;
+  margin: 30px 0;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  color: var(--text-dark);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background: var(--primary-color-selected);
+}
+
+/* Game Screen */
+#game-screen {
+  height: 100vh;
+  background: url("/images/bg2.png") no-repeat center center fixed;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+  font-size: 22px;
+}
+
+#dice-results {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.dice {
+  font-size: 50px;
+}
+
+/* Try Again Screen */
+#try-again-screen {
+  height: 100vh;
+  background: url("/images/bg3.png") no-repeat center center fixed;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#display-name {
+  color: var(--text-dark);
+}
+
+#exit-btn {
+  margin-top: 50px;
+}
